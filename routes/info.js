@@ -1,6 +1,7 @@
-var express = require('express');
-var _ = require('lodash');
-var moment = require('moment');
+var express = require('express'),
+	_ = require('lodash'), 
+	moment = require('moment'),
+	faker = require('faker');
 
 var R = express.Router();
 
@@ -10,6 +11,11 @@ R.get('/info', function(req, res) {
 			version: '1.0',
 			language: 'en',
 			date: moment().format('MMMM Do YYYY, h:mm')
+		},
+		welcome: {
+			user: {
+				name: faker.name.findName()
+			}
 		}
 	});
 });

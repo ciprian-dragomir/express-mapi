@@ -1,0 +1,17 @@
+{
+  "name": "express-mapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ciprian",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express.js": "^1.0.0",
+    "lodash": "^4.6.1",
+    "moment": "^2.12.0"
+  }
+}
